@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\bin\Debug\net8.0\SocialMedia.data.deps.json
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\bin\Debug\net8.0\SocialMedia.data.runtimeconfig.json
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\bin\Debug\net8.0\SocialMedia.data.dll
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\bin\Debug\net8.0\SocialMedia.data.pdb
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\obj\Debug\net8.0\SocialMedia.data.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\obj\Debug\net8.0\SocialMedia.data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\obj\Debug\net8.0\SocialMedia.data.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\obj\Debug\net8.0\SocialMedia.data.AssemblyInfo.cs
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\obj\Debug\net8.0\SocialMedia.data.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\obj\Debug\net8.0\SocialMedia.data.sourcelink.json
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\obj\Debug\net8.0\SocialMedia.data.dll
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\obj\Debug\net8.0\refint\SocialMedia.data.dll
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\obj\Debug\net8.0\SocialMedia.data.pdb
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\obj\Debug\net8.0\SocialMedia.data.genruntimeconfig.cache
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\obj\Debug\net8.0\ref\SocialMedia.data.dll
