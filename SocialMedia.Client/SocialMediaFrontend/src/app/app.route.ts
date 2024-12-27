@@ -9,7 +9,6 @@ import { CryptoComponent } from './crypto';
 // widgets
 
 // tables
-import { TablesComponent } from './tables';
 
 // font-icons
 
@@ -47,14 +46,13 @@ export const routes: Routes = [
             // { path: '', loadChildren: () => import('./elements/elements.module').then((d) => d.ElementsModule) },
 
             // forms
-            { path: '', loadChildren: () => import('./forms/form.module').then((d) => d.FormModule) },
+            // { path: '', loadChildren: () => import('./forms/form.module').then((d) => d.FormModule) },
 
             // users
             { path: '', loadChildren: () => import('./users/user.module').then((d) => d.UsersModule) },
 
             // tables
-            { path: 'tables', component: TablesComponent, title: 'Tables | VRISTO - Multipurpose Tailwind Dashboard Template' },
-            { path: '', loadChildren: () => import('./datatables/datatables.module').then((d) => d.DatatablesModule) },
+            // { path: '', loadChildren: () => import('./datatables/datatables.module').then((d) => d.DatatablesModule) },
 
             // font-icons
 

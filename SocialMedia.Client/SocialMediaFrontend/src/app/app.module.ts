@@ -55,7 +55,6 @@ import { CryptoComponent } from './crypto';
 // widgets
 
 // tables
-import { TablesComponent } from './tables';
 
 // font-icons
 
@@ -114,7 +113,6 @@ import { IconModule } from './shared/icon/icon.module';
         FooterComponent,
         SidebarComponent,
         ThemeCustomizerComponent,
-        TablesComponent,
         IndexComponent,
         AnalyticsComponent,
         FinanceComponent,
