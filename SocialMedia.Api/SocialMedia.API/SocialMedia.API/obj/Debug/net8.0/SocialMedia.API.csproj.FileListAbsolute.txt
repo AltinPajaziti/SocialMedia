@@ -169,3 +169,5 @@ C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.A
 C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.API\obj\Debug\net8.0\ref\SocialMedia.API.dll
 C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.API\bin\Debug\net8.0\SocialMedia.data.dll
 C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.API\bin\Debug\net8.0\SocialMedia.data.pdb
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.API\bin\Debug\net8.0\SocialMedoa.core.dll
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.API\bin\Debug\net8.0\SocialMedoa.core.pdb

@@ -13,3 +13,6 @@ C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.d
 C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\obj\Debug\net8.0\SocialMedia.data.pdb
 C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\obj\Debug\net8.0\SocialMedia.data.genruntimeconfig.cache
 C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\obj\Debug\net8.0\ref\SocialMedia.data.dll
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\bin\Debug\net8.0\SocialMedoa.core.dll
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\bin\Debug\net8.0\SocialMedoa.core.pdb
+C:\Users\PC\Desktop\SocialMediaApp\SocialMedia.Api\SocialMedia.API\SocialMedia.data\obj\Debug\net8.0\SocialMe.8DEB8488.Up2Date
