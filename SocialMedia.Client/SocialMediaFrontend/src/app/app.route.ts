@@ -7,19 +7,15 @@ import { FinanceComponent } from './finance';
 import { CryptoComponent } from './crypto';
 
 // widgets
-import { WidgetsComponent } from './widgets';
 
 // tables
 import { TablesComponent } from './tables';
 
 // font-icons
-import { FontIconsComponent } from './font-icons';
 
 // charts
-import { ChartsComponent } from './charts';
 
 // dragndrop
-import { DragndropComponent } from './dragndrop';
 
 // layouts
 import { AppLayout } from './layouts/app-layout';
@@ -41,16 +37,14 @@ export const routes: Routes = [
             { path: 'crypto', component: CryptoComponent, title: 'Crypto Admin | VRISTO - Multipurpose Tailwind Dashboard Template' },
 
             //apps
-            { path: '', loadChildren: () => import('./apps/apps.module').then((d) => d.AppsModule) },
 
             // widgets
-            { path: 'widgets', component: WidgetsComponent, title: 'Widgets | VRISTO - Multipurpose Tailwind Dashboard Template' },
+            // { path: 'widgets', component: WidgetsComponent, title: 'Widgets | VRISTO - Multipurpose Tailwind Dashboard Template' },
 
             // components
-            { path: '', loadChildren: () => import('./components/components.module').then((d) => d.ComponentsModule) },
 
             // elements
-            { path: '', loadChildren: () => import('./elements/elements.module').then((d) => d.ElementsModule) },
+            // { path: '', loadChildren: () => import('./elements/elements.module').then((d) => d.ElementsModule) },
 
             // forms
             { path: '', loadChildren: () => import('./forms/form.module').then((d) => d.FormModule) },
@@ -63,13 +57,11 @@ export const routes: Routes = [
             { path: '', loadChildren: () => import('./datatables/datatables.module').then((d) => d.DatatablesModule) },
 
             // font-icons
-            { path: 'font-icons', component: FontIconsComponent, title: 'Font Icons | VRISTO - Multipurpose Tailwind Dashboard Template' },
 
             // charts
-            { path: 'charts', component: ChartsComponent, title: 'Charts | VRISTO - Multipurpose Tailwind Dashboard Template' },
 
             // dragndrop
-            { path: 'dragndrop', component: DragndropComponent, title: 'Dragndrop | VRISTO - Multipurpose Tailwind Dashboard Template' },
+            // { path: 'dragndrop', component: DragndropComponent, title: 'Dragndrop | VRISTO - Multipurpose Tailwind Dashboard Template' },
 
             // pages
             { path: 'pages/knowledge-base', component: KnowledgeBaseComponent, title: 'Knowledge Base | VRISTO - Multipurpose Tailwind Dashboard Template' },
