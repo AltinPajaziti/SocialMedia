@@ -1608,6 +1608,20 @@
             "rid": "win"
           }
         }
+      },
+      "SocialMedoa.core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SocialMedoa.core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SocialMedoa.core.dll": {}
+        }
       }
     }
   },
@@ -4724,13 +4738,19 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "SocialMedoa.core/1.0.0": {
+      "type": "project",
+      "path": "../SocialMedoa.core/SocialMedoa.core.csproj",
+      "msbuildProject": "../SocialMedoa.core/SocialMedoa.core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore >= 9.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0",
-      "Microsoft.EntityFrameworkCore.Tools >= 9.0.0"
+      "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
+      "SocialMedoa.core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4760,7 +4780,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedoa.core\\SocialMedoa.core.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedoa.core\\SocialMedoa.core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

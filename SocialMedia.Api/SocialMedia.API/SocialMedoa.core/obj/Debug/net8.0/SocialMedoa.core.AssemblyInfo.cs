@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SocialMedoa.core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+503a724d8d2571195b236febf78a6eef55646b64")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8089b8f95c249f4567650a6ce5d332aaabb164c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("SocialMedoa.core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SocialMedoa.core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
