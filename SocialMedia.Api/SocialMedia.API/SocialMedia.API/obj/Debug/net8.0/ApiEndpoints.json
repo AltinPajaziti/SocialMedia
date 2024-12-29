@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "SocialMedia.API.Controllers.UsersController",
+    "Method": "Get",
+    "RelativePath": "api/Users/Get-all-users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SocialMedia.API.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

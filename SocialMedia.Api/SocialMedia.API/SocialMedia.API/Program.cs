@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using SocialMedia.data.Services;
 using SocialMedia.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,16 +12,28 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
+
+
+
+
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAngularApp",
-        policy =>
-        {
-            policy.WithOrigins("http://localhost:4200")
-                  .AllowAnyHeader()
-                  .AllowAnyMethod();
-        });
+    options.AddPolicy("CorsPolicy",
+        builder => builder.AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader());
 });
+
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy",
+        builder => builder.AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader());
+});
+
+builder.Services.ConfigureRepositoryWrapper();
 
 builder.Services.AddDbContext<SocialMediaDbContext>(options =>
 {
