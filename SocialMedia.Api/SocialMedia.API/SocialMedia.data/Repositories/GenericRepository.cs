@@ -2,12 +2,8 @@
 using SocialMedia.data.Models;
 using SocialMedia.data.Repositories.Interfaces;
 using SocialMedia.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace SocialMedia.data.Repositories
 {

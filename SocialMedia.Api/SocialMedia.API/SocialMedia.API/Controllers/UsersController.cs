@@ -20,11 +20,11 @@ namespace SocialMedia.API.Controllers
 
         [HttpGet("Get-all-users")]
 
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get(int id)
         {
             try
             {
-                var users = await _repository.Users.GetAll().ToListAsync();
+                var users = await _repository.Users.GetByCondition(x=>x.Id == id).FirstOrDefaultAsync();
                 return Ok(users);
             }
 

@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using SocialMedia.data.Repositories;
+using SocialMedia.data.Repositories.Interfaces;
 using SocialMedia.data.Services;
 using SocialMedia.Data;
 
@@ -33,14 +35,16 @@ builder.Services.AddCors(options =>
         .AllowAnyHeader());
 });
 
-builder.Services.ConfigureRepositoryWrapper();
-
 builder.Services.AddDbContext<SocialMediaDbContext>(options =>
 {
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")
         , options => options.CommandTimeout(300));
 });
+
+builder.Services.ConfigureRepositoryWrapper();
+
+
 
 var app = builder.Build();
 

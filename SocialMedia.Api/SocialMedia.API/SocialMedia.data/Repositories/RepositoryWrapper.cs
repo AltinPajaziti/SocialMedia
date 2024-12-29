@@ -14,6 +14,13 @@ namespace SocialMedia.data.Repositories
         private readonly SocialMediaDbContext _repoContext;
 
 
+        public RepositoryWrapper(SocialMediaDbContext repoContext)
+        {
+            _repoContext = repoContext;
+        }
+
+
+
 
         public IUserRepository Users
         {
