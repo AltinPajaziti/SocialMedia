@@ -22,7 +22,7 @@ namespace SocialMedia.API.Controllers
 
         [HttpGet("Get-all-users") ]
 
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetAll()
         {
             try
             {
