@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Migrations\\20241230181743_user-entityy-update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SocialMedia.data\\Migrations\\20241230181743_user-entityy-update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6239E32-A3DA-42D4-8CF0-2EC4F0014FC5}|SocialMedoa.core\\SocialMedoa.core.csproj|c:\\users\\pc\\desktop\\socialmediaapp\\socialmedia.api\\socialmedia.api\\socialmedoa.core\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6239E32-A3DA-42D4-8CF0-2EC4F0014FC5}|SocialMedoa.core\\SocialMedoa.core.csproj|solutionrelative:socialmedoa.core\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{394BAE2E-0AD6-49CD-B42E-CB6EA0076391}|SocialMedia.data\\SocialMedia.data.csproj|c:\\users\\pc\\desktop\\socialmediaapp\\socialmedia.api\\socialmedia.api\\socialmedia.data\\repositories\\authenticationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{394BAE2E-0AD6-49CD-B42E-CB6EA0076391}|SocialMedia.data\\SocialMedia.data.csproj|solutionrelative:socialmedia.data\\repositories\\authenticationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|c:\\users\\pc\\desktop\\socialmediaapp\\socialmedia.api\\socialmedia.api\\socialmedia.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|solutionrelative:socialmedia.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|c:\\users\\pc\\desktop\\socialmediaapp\\socialmedia.api\\socialmedia.api\\socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|solutionrelative:socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{394BAE2E-0AD6-49CD-B42E-CB6EA0076391}|SocialMedia.data\\SocialMedia.data.csproj|c:\\users\\pc\\desktop\\socialmediaapp\\socialmedia.api\\socialmedia.api\\socialmedia.data\\services\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{394BAE2E-0AD6-49CD-B42E-CB6EA0076391}|SocialMedia.data\\SocialMedia.data.csproj|solutionrelative:socialmedia.data\\services\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{394BAE2E-0AD6-49CD-B42E-CB6EA0076391}|SocialMedia.data\\SocialMedia.data.csproj|c:\\users\\pc\\desktop\\socialmediaapp\\socialmedia.api\\socialmedia.api\\socialmedia.data\\socialmediadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,10 +31,6 @@
       "RelativeMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|solutionrelative:socialmedia.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|c:\\users\\pc\\desktop\\socialmediaapp\\socialmedia.api\\socialmedia.api\\socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|solutionrelative:socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{394BAE2E-0AD6-49CD-B42E-CB6EA0076391}|SocialMedia.data\\SocialMedia.data.csproj|c:\\users\\pc\\desktop\\socialmediaapp\\socialmedia.api\\socialmedia.api\\socialmedia.data\\repositories\\interfaces\\authentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{394BAE2E-0AD6-49CD-B42E-CB6EA0076391}|SocialMedia.data\\SocialMedia.data.csproj|solutionrelative:socialmedia.data\\repositories\\interfaces\\authentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -42,50 +42,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20241230181743_user-entityy-update.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Migrations\\20241230181743_user-entityy-update.cs",
-              "RelativeDocumentMoniker": "SocialMedia.data\\Migrations\\20241230181743_user-entityy-update.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Migrations\\20241230181743_user-entityy-update.cs",
-              "RelativeToolTip": "SocialMedia.data\\Migrations\\20241230181743_user-entityy-update.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "SocialMedia.API\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "SocialMedia.API\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwC0AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T18:17:43.638Z",
+              "WhenOpened": "2024-12-30T19:04:50.868Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Program.cs",
+              "RelativeDocumentMoniker": "SocialMedia.API\\Program.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Program.cs",
+              "RelativeToolTip": "SocialMedia.API\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwA4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T19:02:28.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServiceExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Services\\ServiceExtensions.cs",
+              "RelativeDocumentMoniker": "SocialMedia.data\\Services\\ServiceExtensions.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Services\\ServiceExtensions.cs",
+              "RelativeToolTip": "SocialMedia.data\\Services\\ServiceExtensions.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAiwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T19:02:02.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AuthenticationRepo.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Repositories\\AuthenticationRepo.cs",
               "RelativeDocumentMoniker": "SocialMedia.data\\Repositories\\AuthenticationRepo.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Repositories\\AuthenticationRepo.cs",
               "RelativeToolTip": "SocialMedia.data\\Repositories\\AuthenticationRepo.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAqwIYAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAqwL0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-30T18:15:41.851Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedoa.core\\User.cs",
-              "RelativeDocumentMoniker": "SocialMedoa.core\\User.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedoa.core\\User.cs",
-              "RelativeToolTip": "SocialMedoa.core\\User.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA3wBUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T18:10:30.396Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "20241230180856_user-updated.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Migrations\\20241230180856_user-updated.cs",
               "RelativeDocumentMoniker": "SocialMedia.data\\Migrations\\20241230180856_user-updated.cs",
@@ -97,12 +114,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SocialMediaDbContext.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\SocialMediaDbContext.cs",
               "RelativeDocumentMoniker": "SocialMedia.data\\SocialMediaDbContext.cs",
@@ -111,19 +124,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-30T17:55:13.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Program.cs",
-              "RelativeDocumentMoniker": "SocialMedia.API\\Program.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Program.cs",
-              "RelativeToolTip": "SocialMedia.API\\Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T17:48:37.596Z",
               "EditorCaption": ""
             },
             {
@@ -141,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "SocialMedia.API\\Controllers\\UsersController.cs",

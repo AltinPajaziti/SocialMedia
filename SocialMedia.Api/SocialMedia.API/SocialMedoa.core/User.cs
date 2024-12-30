@@ -15,9 +15,6 @@ namespace SocialMedoa.core
         public string Adress { get; set; }
 
 
-        public string Bio { get; set; }
-        public bool IsActive { get; set; }
-        public bool IsVerified { get; set; }
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
 

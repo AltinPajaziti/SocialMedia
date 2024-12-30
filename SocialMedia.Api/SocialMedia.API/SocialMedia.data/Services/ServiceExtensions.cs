@@ -25,6 +25,8 @@ namespace SocialMedia.data.Services
             services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             services.AddScoped<IToken, TokenRepo>();
             services.AddScoped<Authentication , AuthenticationRepo>();
+
+
         }
 
 

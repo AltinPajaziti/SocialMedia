@@ -183,8 +183,8 @@ namespace SocialMedia.data.Repositories
                 Surname = register.Surname,
                 Adress = register.Adress,
                 Email = register.Email,
-                //PasswordSalt = hmac.Key,
-                //PasswordHash = passwordHash,
+                PasswordSalt = hmac.Key,
+                PasswordHash = passwordHash,
                 Roleid = 2
 
             };
