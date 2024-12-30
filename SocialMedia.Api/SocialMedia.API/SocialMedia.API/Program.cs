@@ -1,10 +1,17 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using SocialMedia.data.Repositories;
 using SocialMedia.data.Repositories.Interfaces;
 using SocialMedia.data.Services;
 using SocialMedia.Data;
 using Swashbuckle.AspNetCore.Filters;
+using System.Text;
+
+
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -57,6 +64,22 @@ builder.Services.AddDbContext<SocialMediaDbContext>(options =>
         builder.Configuration.GetConnectionString("DefaultConnection"),
         options => options.CommandTimeout(300));
 });
+
+
+var tokenKey = builder.Configuration.GetValue<string>("TokenKey");
+
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tokenKey)),
+            ValidateIssuer = false,
+            ValidateAudience = false
+        };
+    });
 
 builder.Services.ConfigureRepositoryWrapper();
 
