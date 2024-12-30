@@ -19,9 +19,6 @@ namespace SocialMedia.data.Repositories
             _repoContext = repoContext;
         }
 
-
-
-
         public IUserRepository Users
         {
             get

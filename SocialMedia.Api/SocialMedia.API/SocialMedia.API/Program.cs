@@ -38,12 +38,13 @@ builder.Services.AddCors(options =>
 builder.Services.AddDbContext<SocialMediaDbContext>(options =>
 {
     options.UseSqlServer(
-        builder.Configuration.GetConnectionString("DefaultConnection")
-        , options => options.CommandTimeout(300));
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        options => options.CommandTimeout(300));
 });
 
 builder.Services.ConfigureRepositoryWrapper();
 
+builder.Services.AddHttpContextAccessor();
 
 
 var app = builder.Build();

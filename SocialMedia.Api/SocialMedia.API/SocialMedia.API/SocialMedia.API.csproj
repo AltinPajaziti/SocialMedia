@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SocialMedia.data\SocialMedia.data.csproj" />
+    <ProjectReference Include="..\SocialMedoa.core\SocialMedoa.core.csproj" />
   </ItemGroup>
 
 </Project>

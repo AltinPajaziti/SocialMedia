@@ -23,6 +23,8 @@ namespace SocialMedia.data.Services
         public static void ConfigureRepositoryWrapper(this IServiceCollection services)
         {
             services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
+            services.AddScoped<IToken, TokenRepo>();
+            services.AddScoped<Authentication , AuthenticationRepo>();
         }
 
 
