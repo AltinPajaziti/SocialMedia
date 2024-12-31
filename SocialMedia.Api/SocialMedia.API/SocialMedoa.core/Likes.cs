@@ -10,5 +10,7 @@ namespace SocialMedoa.core
     {
         public DateTime CreatedAt { get; set; }
         public bool IsActive { get; set; }
+        public Post posts { get; set; }
+        public long Postid { get; set; }
     }
 }

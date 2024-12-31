@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SocialMedia.Data;
 
@@ -11,9 +12,11 @@ using SocialMedia.Data;
 namespace SocialMedia.data.Migrations
 {
     [DbContext(typeof(SocialMediaDbContext))]
-    partial class SocialMediaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241231103318_entity-relationshipupdate")]
+    partial class entityrelationshipupdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -86,15 +89,7 @@ namespace SocialMedia.data.Migrations
                     b.Property<long?>("ModifiedBy")
                         .HasColumnType("bigint");
 
-                    b.Property<long>("Postid")
-                        .HasColumnType("bigint");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("Postid");
-
-                    b.HasIndex("Id", "Postid")
-                        .IsUnique();
 
                     b.ToTable("Likes");
                 });
@@ -227,17 +222,6 @@ namespace SocialMedia.data.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("SocialMedoa.core.Likes", b =>
-                {
-                    b.HasOne("SocialMedoa.core.Post", "posts")
-                        .WithMany("Likes")
-                        .HasForeignKey("Postid")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("posts");
-                });
-
             modelBuilder.Entity("SocialMedoa.core.Post", b =>
                 {
                     b.HasOne("SocialMedoa.core.User", "Users")
@@ -258,11 +242,6 @@ namespace SocialMedia.data.Migrations
                         .IsRequired();
 
                     b.Navigation("Roli");
-                });
-
-            modelBuilder.Entity("SocialMedoa.core.Post", b =>
-                {
-                    b.Navigation("Likes");
                 });
 
             modelBuilder.Entity("SocialMedoa.core.Roles", b =>

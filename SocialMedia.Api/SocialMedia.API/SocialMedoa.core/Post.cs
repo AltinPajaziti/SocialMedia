@@ -11,5 +11,10 @@ namespace SocialMedoa.core
         public string Title { get; set; }
         public string Content { get; set; }
         public bool IsActive { get; set; }
+        public User Users { get; set; }
+        public long UserId { get; set; }    
+
+        public ICollection<Likes> Likes { get; set; }
+
     }
 }

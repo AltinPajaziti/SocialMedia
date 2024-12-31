@@ -73,7 +73,7 @@
   },
   {
     "ContainingType": "SocialMedia.API.Controllers.UsersController",
-    "Method": "Get",
+    "Method": "GetAll",
     "RelativePath": "api/Users/Get-all-users",
     "HttpMethod": "GET",
     "IsController": true,

@@ -32,6 +32,9 @@ namespace SocialMedoa.core
         public DateTime TokenExpires { get; set; }
 
 
+        public ICollection<Post> Posts { get; set; }
+
+
 
     }
 }

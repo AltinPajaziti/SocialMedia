@@ -28,7 +28,28 @@ namespace SocialMedia.Data
             .OnDelete(DeleteBehavior.Cascade);
 
 
-            
+
+            modelBuilder.Entity<User>()
+             .HasMany(u => u.Posts)
+             .WithOne(p => p.Users)
+             .HasForeignKey(p => p.UserId)
+             .OnDelete(DeleteBehavior.Cascade);
+
+
+            modelBuilder.Entity<Likes>()
+           .HasOne(l => l.posts) 
+           .WithMany(p => p.Likes) 
+           .HasForeignKey(l => l.Postid);
+
+
+            modelBuilder.Entity<Likes>()
+            .HasIndex(l => new { l.Id, l.Postid })
+            .IsUnique();
+
+
+
+
+
 
         }
 
