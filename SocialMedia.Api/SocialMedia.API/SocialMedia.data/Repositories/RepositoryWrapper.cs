@@ -13,6 +13,10 @@ namespace SocialMedia.data.Repositories
         private readonly SocialMediaDbContext _repoContext;
         private IUserRepository _userRepository;
         private IFollowRequests _FollowRequestsRepository;
+        private IComments _CommentsRepository;
+        private ILikes _LikesRepository;
+        private IPosts _PostRepository;
+
 
 
 
@@ -39,6 +43,42 @@ namespace SocialMedia.data.Repositories
                 if (_FollowRequestsRepository == null)
                     _FollowRequestsRepository = new FollowRequestsRepository(_repoContext);
                 return _FollowRequestsRepository;
+            }
+        }
+
+
+        public IComments comments
+        {
+            get
+            {
+                if(_CommentsRepository == null)
+                    _CommentsRepository = new CommentsRepository(_repoContext);
+                return _CommentsRepository;
+
+            }
+        }
+
+        public ILikes likes
+        {
+            get
+            {
+                if (_LikesRepository == null)
+                    _LikesRepository = new LikesRepository(_repoContext);
+                return _LikesRepository;
+
+            }
+
+        }
+
+
+        public IPosts posts
+        {
+            get
+            {
+                if (_PostRepository == null)
+                    _PostRepository = new PostRepository(_repoContext);
+                return _PostRepository;
+
             }
         }
 

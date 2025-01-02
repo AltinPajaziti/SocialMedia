@@ -13,6 +13,11 @@ namespace SocialMedia.data.Repositories.Interfaces
         IUserRepository Users { get; }
 
         IFollowRequests FollowRequests { get; }
+        IPosts posts { get; }
+
+        ILikes likes { get; }
+
+        IComments comments { get; }
 
     }
 }
