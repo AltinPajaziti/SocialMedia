@@ -48,6 +48,28 @@ namespace SocialMedia.Data
 
 
 
+            modelBuilder.Entity<Post>()
+                 .HasMany(u => u.Comments)
+                 .WithOne(p=>p.posts)
+                 .HasForeignKey(f=>f.PostId)
+                 .OnDelete(DeleteBehavior.Restrict);
+
+
+
+
+            modelBuilder.Entity<FollowRequests>()
+              .HasOne(fr => fr.Sender)
+              .WithMany(u => u.SentFollowRequests)
+              .HasForeignKey(fr => fr.SenderId)
+              .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<FollowRequests>()
+                .HasOne(fr => fr.Receiver)
+                .WithMany(u => u.ReceivedFollowRequests)
+                .HasForeignKey(fr => fr.ReceiverId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+
 
 
 

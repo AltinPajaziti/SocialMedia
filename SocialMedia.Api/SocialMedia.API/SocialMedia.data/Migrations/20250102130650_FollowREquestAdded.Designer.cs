@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SocialMedia.Data;
 
@@ -11,9 +12,11 @@ using SocialMedia.Data;
 namespace SocialMedia.data.Migrations
 {
     [DbContext(typeof(SocialMediaDbContext))]
-    partial class SocialMediaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250102130650_FollowREquestAdded")]
+    partial class FollowREquestAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

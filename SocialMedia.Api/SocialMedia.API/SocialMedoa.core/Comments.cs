@@ -12,5 +12,8 @@ namespace SocialMedoa.core
         public string Content { get; set; }
 
         public bool IsActive { get; set; }
+
+        public Post posts { get; set; }
+        public long PostId { get; set; }    
     }
 }

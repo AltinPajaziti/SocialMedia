@@ -16,5 +16,7 @@ namespace SocialMedoa.core
 
         public ICollection<Likes> Likes { get; set; }
 
+        public ICollection<Comments> Comments { get; set; }
+
     }
 }

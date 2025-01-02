@@ -27,12 +27,18 @@ namespace SocialMedoa.core
 
         public string RefreshToken { get; set; } = string.Empty;
 
+        public bool IsPrivate { get; set; }
+
         public DateTime TokenCreated { get; set; }
 
         public DateTime TokenExpires { get; set; }
 
 
         public ICollection<Post> Posts { get; set; }
+
+        public ICollection<FollowRequests> SentFollowRequests { get; set; } 
+        public ICollection<FollowRequests> ReceivedFollowRequests { get; set; }
+
 
 
 

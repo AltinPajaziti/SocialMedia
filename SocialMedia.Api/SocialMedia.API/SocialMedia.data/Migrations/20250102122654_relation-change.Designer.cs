@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SocialMedia.Data;
 
@@ -11,9 +12,11 @@ using SocialMedia.Data;
 namespace SocialMedia.data.Migrations
 {
     [DbContext(typeof(SocialMediaDbContext))]
-    partial class SocialMediaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250102122654_relation-change")]
+    partial class relationchange
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -60,50 +63,6 @@ namespace SocialMedia.data.Migrations
                     b.HasIndex("PostId");
 
                     b.ToTable("Comments");
-                });
-
-            modelBuilder.Entity("SocialMedoa.core.FollowRequests", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("Deleted")
-                        .HasColumnType("bit");
-
-                    b.Property<long?>("InsertedBy")
-                        .HasColumnType("bigint");
-
-                    b.Property<DateTime>("InsertedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("LastModified")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("ModifiedBy")
-                        .HasColumnType("bigint");
-
-                    b.Property<long>("ReceiverId")
-                        .HasColumnType("bigint");
-
-                    b.Property<long>("SenderId")
-                        .HasColumnType("bigint");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ReceiverId");
-
-                    b.HasIndex("SenderId");
-
-                    b.ToTable("FollowRequests");
                 });
 
             modelBuilder.Entity("SocialMedoa.core.Likes", b =>
@@ -234,9 +193,6 @@ namespace SocialMedia.data.Migrations
                     b.Property<DateTime>("InsertedOn")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool>("IsPrivate")
-                        .HasColumnType("bit");
-
                     b.Property<DateTime?>("LastModified")
                         .HasColumnType("datetime2");
 
@@ -290,25 +246,6 @@ namespace SocialMedia.data.Migrations
                     b.Navigation("posts");
                 });
 
-            modelBuilder.Entity("SocialMedoa.core.FollowRequests", b =>
-                {
-                    b.HasOne("SocialMedoa.core.User", "Receiver")
-                        .WithMany("ReceivedFollowRequests")
-                        .HasForeignKey("ReceiverId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("SocialMedoa.core.User", "Sender")
-                        .WithMany("SentFollowRequests")
-                        .HasForeignKey("SenderId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Receiver");
-
-                    b.Navigation("Sender");
-                });
-
             modelBuilder.Entity("SocialMedoa.core.Likes", b =>
                 {
                     b.HasOne("SocialMedoa.core.Post", "posts")
@@ -357,10 +294,6 @@ namespace SocialMedia.data.Migrations
             modelBuilder.Entity("SocialMedoa.core.User", b =>
                 {
                     b.Navigation("Posts");
-
-                    b.Navigation("ReceivedFollowRequests");
-
-                    b.Navigation("SentFollowRequests");
                 });
 #pragma warning restore 612, 618
         }
