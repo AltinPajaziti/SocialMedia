@@ -10,8 +10,10 @@ namespace SocialMedia.data.Repositories
 {
     public class RepositoryWrapper : IRepositoryWrapper
     {
-        private IUserRepository _userRepository;
         private readonly SocialMediaDbContext _repoContext;
+        private IUserRepository _userRepository;
+        private IFollowRequests _FollowRequestsRepository;
+
 
 
         public RepositoryWrapper(SocialMediaDbContext repoContext)
@@ -27,6 +29,24 @@ namespace SocialMedia.data.Repositories
                     _userRepository = new UserRepository(_repoContext);
                 return _userRepository;
             }
+        }
+
+
+        public IFollowRequests FollowRequests
+        {
+            get
+            {
+                if (_FollowRequestsRepository == null)
+                    _FollowRequestsRepository = new FollowRequestsRepository(_repoContext);
+                return _FollowRequestsRepository;
+            }
+        }
+
+
+
+        public async Task SaveAsync(string userName = "", string customMessage = "")
+        {
+            await _repoContext.SaveChangesAsync();
         }
     }
 }

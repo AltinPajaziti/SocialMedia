@@ -72,6 +72,16 @@
     ]
   },
   {
+    "ContainingType": "SocialMedia.API.Controllers.FollowRequestsController",
+    "Method": "GetAllFollowRequests",
+    "RelativePath": "api/FollowRequests/GetAllFollowrs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SocialMedia.API.Controllers.UsersController",
     "Method": "GetAll",
     "RelativePath": "api/Users/Get-all-users",

@@ -12,6 +12,8 @@ namespace SocialMedia.Data
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Post> Posts { get; set; }
 
+        public virtual DbSet<FollowRequests> FollowRequests { get; set; }
+
         public virtual DbSet<Likes> Likes { get; set; }
         public virtual DbSet<Roles> Roles { get; set; }
 

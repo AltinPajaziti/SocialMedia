@@ -8,8 +8,11 @@ namespace SocialMedia.data.Repositories.Interfaces
 {
     public interface IRepositoryWrapper
     {
+        Task SaveAsync(string userName = "", string customMessage = "");
 
         IUserRepository Users { get; }
+
+        IFollowRequests FollowRequests { get; }
 
     }
 }

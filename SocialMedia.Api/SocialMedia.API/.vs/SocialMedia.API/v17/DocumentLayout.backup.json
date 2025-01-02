@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{394BAE2E-0AD6-49CD-B42E-CB6EA0076391}|SocialMedia.data\\SocialMedia.data.csproj|c:\\users\\pc\\desktop\\socialmediaapp\\socialmedia.api\\socialmedia.api\\socialmedia.data\\socialmediadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{394BAE2E-0AD6-49CD-B42E-CB6EA0076391}|SocialMedia.data\\SocialMedia.data.csproj|solutionrelative:socialmedia.data\\socialmediadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Migrations\\20250102143012_followrequestsChanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SocialMedia.data\\Migrations\\20250102143012_followrequestsChanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|c:\\users\\pc\\desktop\\socialmediaapp\\socialmedia.api\\socialmedia.api\\socialmedia.api\\controllers\\followrequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|solutionrelative:socialmedia.api\\controllers\\followrequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B6239E32-A3DA-42D4-8CF0-2EC4F0014FC5}|SocialMedoa.core\\SocialMedoa.core.csproj|c:\\users\\pc\\desktop\\socialmediaapp\\socialmedia.api\\socialmedia.api\\socialmedoa.core\\followrequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B6239E32-A3DA-42D4-8CF0-2EC4F0014FC5}|SocialMedoa.core\\SocialMedoa.core.csproj|c:\\users\\pc\\desktop\\socialmediaapp\\socialmedia.api\\socialmedia.api\\socialmedoa.core\\likes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6239E32-A3DA-42D4-8CF0-2EC4F0014FC5}|SocialMedoa.core\\SocialMedoa.core.csproj|solutionrelative:socialmedoa.core\\likes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|c:\\users\\pc\\desktop\\socialmediaapp\\socialmedia.api\\socialmedia.api\\socialmedia.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|solutionrelative:socialmedia.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|c:\\users\\pc\\desktop\\socialmediaapp\\socialmedia.api\\socialmedia.api\\socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,17 +53,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250102143012_followrequestsChanges.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Migrations\\20250102143012_followrequestsChanges.cs",
+              "RelativeDocumentMoniker": "SocialMedia.data\\Migrations\\20250102143012_followrequestsChanges.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Migrations\\20250102143012_followrequestsChanges.cs",
+              "RelativeToolTip": "SocialMedia.data\\Migrations\\20250102143012_followrequestsChanges.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T14:30:12.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "FollowRequestsController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\FollowRequestsController.cs",
+              "RelativeDocumentMoniker": "SocialMedia.API\\Controllers\\FollowRequestsController.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\FollowRequestsController.cs",
+              "RelativeToolTip": "SocialMedia.API\\Controllers\\FollowRequestsController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T14:27:27.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FollowRequests.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedoa.core\\FollowRequests.cs",
               "RelativeDocumentMoniker": "SocialMedoa.core\\FollowRequests.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedoa.core\\FollowRequests.cs",
               "RelativeToolTip": "SocialMedoa.core\\FollowRequests.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAsAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-02T13:05:27.256Z",
               "EditorCaption": ""
@@ -74,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedoa.core\\User.cs",
               "RelativeDocumentMoniker": "SocialMedoa.core\\User.cs",
@@ -87,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Comments.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedoa.core\\Comments.cs",
               "RelativeDocumentMoniker": "SocialMedoa.core\\Comments.cs",
@@ -100,20 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SocialMediaDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\SocialMediaDbContext.cs",
-              "RelativeDocumentMoniker": "SocialMedia.data\\SocialMediaDbContext.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\SocialMediaDbContext.cs*",
-              "RelativeToolTip": "SocialMedia.data\\SocialMediaDbContext.cs*",
-              "ViewState": "AgIAADgAAAAAAAAAAAAYwD8AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T10:44:59.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Likes.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedoa.core\\Likes.cs",
               "RelativeDocumentMoniker": "SocialMedoa.core\\Likes.cs",
@@ -182,19 +195,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-30T17:45:51.134Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "SocialMedia.API\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "SocialMedia.API\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T17:38:13.622Z",
-              "EditorCaption": ""
             }
           ]
         }
