@@ -8,7 +8,6 @@ namespace SocialMedoa.core
 {
     public class Likes : BaseEntity
     {
-        public DateTime CreatedAt { get; set; }
         public bool IsActive { get; set; }
         public Post posts { get; set; }
         public long Postid { get; set; }
