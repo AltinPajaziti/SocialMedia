@@ -74,8 +74,7 @@ export class LoginComponent implements OnInit {
                   return;
                 }
         
-                // Log response for debugging
-                console.log("Response:", response);
+                
         
         
                 const userRole = response.role;
