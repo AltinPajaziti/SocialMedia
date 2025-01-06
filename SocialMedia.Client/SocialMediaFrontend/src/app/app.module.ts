@@ -86,6 +86,8 @@ import { IconModule } from './shared/icon/icon.module';
         FormsModule,
         ReactiveFormsModule,
         HttpClientModule,
+        
+        
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,

@@ -16,6 +16,8 @@ import { CoverRegisterComponent } from './cover-register';
 
 // headlessui
 import { MenuModule } from 'headlessui-angular';
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
     { path: 'auth/boxed-lockscreen', component: BoxedLockscreenComponent, title: 'Boxed Lockscreen | VRISTO - Multipurpose Tailwind Dashboard Template' },
@@ -34,9 +36,11 @@ const routes: Routes = [
         title: 'Cover Password Reset | VRISTO - Multipurpose Tailwind Dashboard Template',
     },
     { path: 'auth/cover-register', component: CoverRegisterComponent, title: 'Cover Register | VRISTO - Multipurpose Tailwind Dashboard Template' },
+
+    {path : 'auth/login', component : LoginComponent}
 ];
 @NgModule({
-    imports: [RouterModule.forChild(routes), CommonModule, MenuModule, IconModule],
+    imports: [RouterModule.forChild(routes), CommonModule, MenuModule, IconModule, ReactiveFormsModule],
     declarations: [
         BoxedLockscreenComponent,
         BoxedPasswordResetComponent,
@@ -46,6 +50,8 @@ const routes: Routes = [
         CoverLoginComponent,
         CoverPasswordResetComponent,
         CoverRegisterComponent,
+        LoginComponent,
+        
     ],
 })
 export class AuthModule {}

@@ -72,13 +72,225 @@
     ]
   },
   {
+    "ContainingType": "SocialMedia.API.Controllers.CommentsController",
+    "Method": "AddComment",
+    "RelativePath": "api/Comments/Create-A-Comment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userComment",
+        "Type": "SocialMedia.data.DTOs.CommentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.CommentsController",
+    "Method": "DeleteComment",
+    "RelativePath": "api/Comments/DeletePostComments",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "commentid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.CommentsController",
+    "Method": "GetAllCommentsForPost",
+    "RelativePath": "api/Comments/Get-Post-Comments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.FollowRequestsController",
+    "Method": "AcceptFollow",
+    "RelativePath": "api/FollowRequests/AcceptFollow",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Followid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.FollowRequestsController",
+    "Method": "DeclineFollow",
+    "RelativePath": "api/FollowRequests/DeclineFollow",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Followid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SocialMedia.API.Controllers.FollowRequestsController",
     "Method": "GetAllFollowRequests",
-    "RelativePath": "api/FollowRequests/GetAllFollowrs",
+    "RelativePath": "api/FollowRequests/GetAllFollowRequests",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.FollowRequestsController",
+    "Method": "RequestForFollow",
+    "RelativePath": "api/FollowRequests/RequestForFollow",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Followid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.LikesController",
+    "Method": "AddLike",
+    "RelativePath": "api/Likes/Add-Like",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.LikesController",
+    "Method": "DeleteLikes",
+    "RelativePath": "api/Likes/DeletePostLikes",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "likeid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.LikesController",
+    "Method": "GetallLikes",
+    "RelativePath": "api/Likes/Get-Post-Likes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.PostsController",
+    "Method": "AddPost",
+    "RelativePath": "api/Posts/Create-A-Post",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userPost",
+        "Type": "SocialMedia.data.DTOs.PostDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.PostsController",
+    "Method": "DeleteComment",
+    "RelativePath": "api/Posts/DeletePost",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Postid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.PostsController",
+    "Method": "GetAllFriendsPosts",
+    "RelativePath": "api/Posts/GetAllFriendsPosts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.PostsController",
+    "Method": "UpdatePost",
+    "RelativePath": "api/Posts/Update-Post",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "updatedPost",
+        "Type": "SocialMedia.data.DTOs.PostDto",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

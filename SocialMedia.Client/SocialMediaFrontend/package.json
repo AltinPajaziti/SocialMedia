@@ -8,6 +8,7 @@
         "watch": "ng build --watch --configuration development",
         "test": "ng test"
     },
+    
     "private": true,
     "dependencies": {
         "@angular/animations": "^15.2.0",
@@ -53,7 +54,7 @@
         "nouislider": "^15.7.0",
         "rxjs": "~7.8.0",
         "sortablejs": "^1.15.0",
-        "sweetalert2": "^11.7.3",
+        "sweetalert2": "^11.15.10",
         "swiper": "^9.2.0",
         "tslib": "^2.3.0",
         "xlsx": "^0.18.5",

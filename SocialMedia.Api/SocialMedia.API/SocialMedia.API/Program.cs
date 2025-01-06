@@ -40,23 +40,14 @@ builder.Services.AddSwaggerGen(options =>
 
 
 
-
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("CorsPolicy",
-        builder => builder.AllowAnyOrigin()
-        .AllowAnyMethod()
-        .AllowAnyHeader());
+    options.AddPolicy("AllowAll", builder =>
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader());
 });
 
-
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("CorsPolicy",
-        builder => builder.AllowAnyOrigin()
-        .AllowAnyMethod()
-        .AllowAnyHeader());
-});
 
 builder.Services.AddDbContext<SocialMediaDbContext>(options =>
 {
@@ -87,6 +78,7 @@ builder.Services.AddHttpContextAccessor();
 
 
 var app = builder.Build();
+app.UseCors("AllowAll");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
