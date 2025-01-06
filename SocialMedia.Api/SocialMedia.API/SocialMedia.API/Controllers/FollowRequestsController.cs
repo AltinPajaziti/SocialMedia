@@ -56,15 +56,24 @@ namespace SocialMedia.API.Controllers
         {
             try
             {
+                var userid = _MySessionService.GetUserId();
+
                 var TheFollow =await _repository.FollowRequests.GetByCondition(x => x.Id == Followid).FirstOrDefaultAsync();
 
-                TheFollow.Status = SocialMedoa.core.FollowRequestStatus.Accepted;
+                if(userid == TheFollow.ReceiverId)
+                {
+                    TheFollow.Status = SocialMedoa.core.FollowRequestStatus.Accepted;
 
-                _repository.FollowRequests.Update(TheFollow);
+                    _repository.FollowRequests.Update(TheFollow);
 
-                await _repository.SaveAsync();
+                    await _repository.SaveAsync();
 
-                return Ok("Follow Accepted succesfully");
+                    return Ok("Follow Accepted succesfully");
+                }
+
+                return BadRequest("This follow it is not for you");
+
+                
 
 
             }
@@ -120,7 +129,7 @@ namespace SocialMedia.API.Controllers
 
             try
             {
-                var userid = _MySessionService.GetUserId();
+                var userid = 2;
 
                 var sender = await _repository.Users.GetAll()
                     .Include(x => x.SentFollowRequests)
