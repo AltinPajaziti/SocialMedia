@@ -2,20 +2,23 @@ import { Injectable } from '@angular/core';
 import { Envirements } from '../Envirements/Envirements';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import { AuthenticationService } from './authentication.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FrendsRequestsService {
 
-   public api = Envirements.api_Url + 'Authentication/'
+   public api = Envirements.api_Url + 'FollowRequests/'
   
-    constructor(private http : HttpClient , private router : Router) { }
+    constructor(private http : HttpClient , private router : Router , private auth : AuthenticationService) { }
 
 
-    GetAllFrendRequests(){
-      return this.http.get<any>(this.api+ 'GetAllFollowRequests' )
+    getAllFriendRequests(): Observable<any> {
+      return this.http.get<any>(`${this.api}GetAllFollowRequests` , {headers : this.auth.Headers()});
     }
+  
 
     AcceptFollow(followId: number) {
       return this.http.get<any>(this.api + 'AcceptFollow?Followid=' + followId);

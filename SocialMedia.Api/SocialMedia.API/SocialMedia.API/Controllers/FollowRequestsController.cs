@@ -32,13 +32,21 @@ namespace SocialMedia.API.Controllers
         {
             try
             {
-                var userid = _MySessionService.GetUserId();
+                var userId = _MySessionService.GetUserId();
 
-                var followers = await _repository.FollowRequests.GetAll().Where(u => u.SenderId == userid).ToListAsync();
-                return Ok(followers);
+                // Query to get all users who sent follow requests
+                var users = await _repository.FollowRequests.GetAll()
+                    .Where(f => f.ReceiverId == userId)
+                    .Join(
+                        _repository.Users.GetAll(),
+                        followRequest => followRequest.SenderId,
+                        user => user.Id,
+                        (followRequest, user) => user // Select the User
+                    )
+                    .ToListAsync();
+
+                return Ok(users);
             }
-
-
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);

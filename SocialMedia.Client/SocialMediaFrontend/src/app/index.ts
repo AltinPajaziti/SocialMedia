@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { animate, style, transition, trigger } from '@angular/animations';
+import { FrendsRequestsService } from './service/frends-requests.service';
 
 @Component({
     moduleId: module.id,
@@ -12,17 +13,31 @@ import { animate, style, transition, trigger } from '@angular/animations';
         ]),
     ],
 })
-export class IndexComponent {
+export class IndexComponent implements OnInit {
     store: any;
     revenueChart: any;
     salesByCategory: any;
     dailySales: any;
     totalOrders: any;
+    FollowREquests ! : any[];
+
     isLoading = true;
-    constructor(public storeData: Store<any>) {
+    constructor(public storeData: Store<any> , private FollowRequestSErvice : FrendsRequestsService) {
         this.initStore();
         this.isLoading = false;
     }
+    ngOnInit(): void {
+        this.FollowRequestSErvice.getAllFriendRequests().subscribe(
+            (response) => {
+                this.FollowREquests = response
+                console.log("The response:", this.FollowREquests);
+            },
+            (error) => {
+                console.error("Error fetching friend requests:", error);
+            }
+        );
+    }
+    
 
     async initStore() {
         this.storeData

@@ -61,26 +61,36 @@
 
             <div class="panel h-full">
                 <div class="mb-5 flex items-center">
-                    <h5 class="text-lg font-semibold dark:text-white-light">Sales By Category</h5>
+                    <h5 class="text-lg font-semibold dark:text-white-light">Follow Requests</h5>
                 </div>
                 <div class="overflow-hidden">
-                    <apx-chart
-                        [series]="salesByCategory.series"
-                        [chart]="salesByCategory.chart"
-                        [dataLabels]="salesByCategory.dataLabels"
-                        [stroke]="salesByCategory.stroke"
-                        [colors]="salesByCategory.colors"
-                        [legend]="salesByCategory.legend"
-                        [plotOptions]="salesByCategory.plotOptions"
-                        [labels]="salesByCategory.labels"
-                        [states]="salesByCategory.states"
-                        class="rounded-lg bg-white dark:bg-black"
-                    >
-                        <!-- loader -->
-                        <div class="grid min-h-[460px] place-content-center bg-white-light/30 dark:bg-dark dark:bg-opacity-[0.08]">
-                            <span class="inline-flex h-5 w-5 animate-spin rounded-full border-2 border-black !border-l-transparent dark:border-white"></span>
+
+
+
+
+
+                    <div class="flex flex-col items-center p-5 sm:flex-row sm:items-center" *ngFor="let follow of FollowREquests">
+                        <div class="mb-5 h-20 w-20 overflow-hidden rounded-full">
+                            <img src="assets/images/profile-34.jpeg" alt="image" class="h-full w-full object-cover">
                         </div>
-                    </apx-chart>
+                        <div class="flex-1 text-center sm:text-left sm:pl-5 sm:pr-5">
+                            <h5 class="mb-2 text-[15px] font-semibold text-[#3b3f5c] dark:text-white-light">{{follow.name + ' ' + follow.surname}}</h5>
+                        </div>
+                        <button class="btn btn-primary mt-6 sm:mt-0 sm:ml-5">Confirm</button>
+                    </div>
+                    
+
+
+
+
+
+
+                    
+                    <!-- <div class="collowrequest">
+                       
+                 <button  class="btn btn-primary mt-6">Confirm</button>
+                    </div> -->
+                 
                 </div>
             </div>
         </div>
@@ -574,7 +584,7 @@
                                 <td class="min-w-[150px] text-black dark:text-white">
                                     <div class="flex items-center">
                                         <img class="h-8 w-8 rounded-md object-cover ltr:mr-3 rtl:ml-3" src="/assets/images/profile-6.jpeg" alt="avatar" />
-                                        <span class="whitespace-nowrap">Luke Ivory</span>
+                                        <span class="whitespace-nowrap">Altin Pajaziti</span>
                                     </div>
                                 </td>
                                 <td class="text-primary">Headphone</td>

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Envirements } from '../Envirements/Envirements';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { LoginModel } from '../Models/LoginModel';
 import { LoginResponse } from '../Models/LoginResponse';
 import { Observable, catchError } from 'rxjs';
@@ -42,6 +42,18 @@ export class AuthenticationService {
         throw err;
       })
     );
+  }
+
+
+  Headers():HttpHeaders{
+  
+
+    const  token = localStorage.getItem('Token')
+    return new HttpHeaders({
+      'Authorization' : `bearer ${token}`
+    })
+
+    
   }
   
 }
