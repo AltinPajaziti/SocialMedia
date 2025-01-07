@@ -21,7 +21,7 @@ export class FrendsRequestsService {
   
 
     AcceptFollow(followId: number) {
-      return this.http.get<any>(this.api + 'AcceptFollow?Followid=' + followId);
+      return this.http.get<any>(this.api + 'AcceptFollow?Followid=' + followId ,  {headers : this.auth.Headers()});
     }
 
     DeclineFollow(followId: number) {

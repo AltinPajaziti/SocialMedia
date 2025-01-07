@@ -20,6 +20,8 @@ export class IndexComponent implements OnInit {
     dailySales: any;
     totalOrders: any;
     FollowREquests ! : any[];
+    topFollowRequests: any[] = [];
+
 
     isLoading = true;
     constructor(public storeData: Store<any> , private FollowRequestSErvice : FrendsRequestsService) {
@@ -30,12 +32,22 @@ export class IndexComponent implements OnInit {
         this.FollowRequestSErvice.getAllFriendRequests().subscribe(
             (response) => {
                 this.FollowREquests = response
-                console.log("The response:", this.FollowREquests);
+                this.topFollowRequests = this.FollowREquests.splice(0,3)
+                console.log("The response:", response);
             },
             (error) => {
                 console.error("Error fetching friend requests:", error);
             }
         );
+    }
+
+    Confirm(followid :any){
+        this.FollowRequestSErvice.AcceptFollow(followid).subscribe(
+            (respounse)=>{
+                console.log("the respounse" , respounse)
+            }
+        )
+        console.log("the follow id " , followid)
     }
     
 

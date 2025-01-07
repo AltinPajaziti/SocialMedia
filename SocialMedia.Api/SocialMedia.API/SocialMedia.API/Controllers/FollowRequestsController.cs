@@ -34,24 +34,29 @@ namespace SocialMedia.API.Controllers
             {
                 var userId = _MySessionService.GetUserId();
 
-                // Query to get all users who sent follow requests
-                var users = await _repository.FollowRequests.GetAll()
+                // Query to get all users who sent follow requests along with the follow request ID
+                var followRequestsWithUsers = await _repository.FollowRequests.GetAll()
                     .Where(f => f.ReceiverId == userId)
                     .Join(
                         _repository.Users.GetAll(),
                         followRequest => followRequest.SenderId,
                         user => user.Id,
-                        (followRequest, user) => user // Select the User
+                        (followRequest, user) => new
+                        {
+                            FollowRequestId = followRequest.Id, // Include Follow Request ID
+                            User = user                         // Include User Details
+                        }
                     )
                     .ToListAsync();
 
-                return Ok(users);
+                return Ok(followRequestsWithUsers);
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
         }
+
 
 
 
