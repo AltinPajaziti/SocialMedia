@@ -11,9 +11,6 @@
       "RelativeMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|solutionrelative:socialmedia.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\AppData\\Local\\SourceServer\\ffccf3ef554e54003bd97dae9eba055c3e4825c8cd0a7efecb52232414df08f7\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\FollowRequestsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|c:\\users\\pc\\desktop\\socialmediaapp\\socialmedia.api\\socialmedia.api\\socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|solutionrelative:socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -58,9 +55,10 @@
               "RelativeDocumentMoniker": "SocialMedia.API\\Controllers\\AuthenticationController.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\AuthenticationController.cs",
               "RelativeToolTip": "SocialMedia.API\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAYwD4AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAYwFMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T20:10:58.49Z"
+              "WhenOpened": "2025-01-07T20:10:58.49Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -70,7 +68,7 @@
               "RelativeDocumentMoniker": "SocialMedia.API\\Controllers\\FollowRequestsController.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\FollowRequestsController.cs",
               "RelativeToolTip": "SocialMedia.API\\Controllers\\FollowRequestsController.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAYwGIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAowBwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-06T21:03:01.974Z",
               "EditorCaption": ""
@@ -78,18 +76,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FollowRequestsController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\AppData\\Local\\SourceServer\\ffccf3ef554e54003bd97dae9eba055c3e4825c8cd0a7efecb52232414df08f7\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\FollowRequestsController.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\ffccf3ef554e54003bd97dae9eba055c3e4825c8cd0a7efecb52232414df08f7\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\FollowRequestsController.cs",
-              "ToolTip": "C:\\Users\\PC\\AppData\\Local\\SourceServer\\ffccf3ef554e54003bd97dae9eba055c3e4825c8cd0a7efecb52232414df08f7\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\FollowRequestsController.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\ffccf3ef554e54003bd97dae9eba055c3e4825c8cd0a7efecb52232414df08f7\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\FollowRequestsController.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAYwHIAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T21:02:09.796Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Program.cs",
               "RelativeDocumentMoniker": "SocialMedia.API\\Program.cs",
@@ -101,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\appsettings.json",
               "RelativeDocumentMoniker": "SocialMedia.API\\appsettings.json",
@@ -113,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PC\\AppData\\Local\\SourceServer\\27aac1e54bbe986e333ebc823707f77ef5efdaf8c4b0b7b5b07662cd235f6867\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\27aac1e54bbe986e333ebc823707f77ef5efdaf8c4b0b7b5b07662cd235f6867\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Program.cs",
@@ -125,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "AuthenticationRepo.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Repositories\\AuthenticationRepo.cs",
               "RelativeDocumentMoniker": "SocialMedia.data\\Repositories\\AuthenticationRepo.cs",
@@ -137,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "FollowRequestsRepository.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Repositories\\FollowRequestsRepository.cs",
               "RelativeDocumentMoniker": "SocialMedia.data\\Repositories\\FollowRequestsRepository.cs",
@@ -149,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "PostsController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\PostsController.cs",
               "RelativeDocumentMoniker": "SocialMedia.API\\Controllers\\PostsController.cs",

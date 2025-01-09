@@ -18,6 +18,7 @@ import { TranslateService } from '@ngx-translate/core';
     ],
 })
 export class HeaderComponent {
+
     store: any;
     search = false;
     notifications = [
@@ -84,7 +85,7 @@ export class HeaderComponent {
         public storeData: Store<any>,
         public router: Router,
         private appSetting: AppService,
-        private sanitizer: DomSanitizer
+        private sanitizer: DomSanitizer,
     ) {
         this.initStore();
     }
@@ -143,5 +144,18 @@ export class HeaderComponent {
             this.storeData.dispatch({type: 'toggleRTL', payload: 'ltr'});
         }
         window.location.reload();
+    }
+
+    Signout() {
+        localStorage.removeItem('Username');
+    localStorage.removeItem('Token');
+    localStorage.removeItem('Role');
+    localStorage.removeItem('Refreshtoken');
+    localStorage.removeItem('TokenExpires');
+
+    this.router.navigate(['/auth/login'])
+    
+    
+    throw new Error('Method not implemented.');
     }
 }

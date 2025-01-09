@@ -64,7 +64,6 @@ export class LoginComponent implements OnInit {
                 
               next: (response: any) => {
                 if (response.status !== 'ok') {
-                    debugger;
                   Swal.fire({
                     icon: 'error',
                     title: 'Oops...',

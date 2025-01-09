@@ -32,7 +32,7 @@ export class IndexComponent implements OnInit {
         this.FollowRequestSErvice.getAllFriendRequests().subscribe(
             (response) => {
                 this.FollowREquests = response
-                this.topFollowRequests = this.FollowREquests.splice(0,3)
+                this.topFollowRequests = response
                 console.log("The response:", response);
             },
             (error) => {
@@ -44,6 +44,7 @@ export class IndexComponent implements OnInit {
     Confirm(followid :any){
         this.FollowRequestSErvice.AcceptFollow(followid).subscribe(
             (respounse)=>{
+                debugger;
                 console.log("the respounse" , respounse)
             }
         )
