@@ -23,6 +23,7 @@ import { AuthLayout } from './layouts/auth-layout';
 // pages
 import { KnowledgeBaseComponent } from './pages/knowledge-base';
 import { FaqComponent } from './pages/faq';
+import { AuthGuard } from './Guards/AuthGuard';
 
 export const routes: Routes = [
     {
@@ -65,6 +66,7 @@ export const routes: Routes = [
             { path: 'pages/knowledge-base', component: KnowledgeBaseComponent, title: 'Knowledge Base | VRISTO - Multipurpose Tailwind Dashboard Template' },
             { path: 'pages/faq', component: FaqComponent, title: 'FAQ | VRISTO - Multipurpose Tailwind Dashboard Template' },
         ],
+        canActivate:[AuthGuard]
     },
 
     {
