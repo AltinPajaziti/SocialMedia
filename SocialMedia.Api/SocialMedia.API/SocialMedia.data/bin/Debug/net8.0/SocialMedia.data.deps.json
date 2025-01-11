@@ -1082,10 +1082,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
         },
         "runtime": {
-          "SocialMedoa.core.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "SocialMedoa.core.dll": {}
         }
       }
     }

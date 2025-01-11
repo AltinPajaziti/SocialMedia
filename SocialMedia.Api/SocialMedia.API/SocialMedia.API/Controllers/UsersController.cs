@@ -38,6 +38,32 @@ namespace SocialMedia.API.Controllers
 
 
 
+        [HttpGet("GetSugestionFrends")]
+        public async Task<IActionResult> GetAllSuggestions()
+        {
+            try
+            {
+                var allUsers = await _repository.Users.GetAll().ToListAsync();
+
+                if (allUsers == null || allUsers.Count == 0)
+                {
+                    return NotFound("No users available for friend suggestions.");
+                }
+
+                Random random = new Random();
+                var randomSuggestions = allUsers.OrderBy(x => random.Next()).Take(3).ToList(); 
+
+                return Ok(randomSuggestions);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+
+
+
 
 
 

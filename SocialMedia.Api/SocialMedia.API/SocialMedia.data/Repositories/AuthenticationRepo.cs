@@ -185,7 +185,7 @@ namespace SocialMedia.data.Repositories
                 Email = register.Email,
                 PasswordSalt = hmac.Key,
                 PasswordHash = passwordHash,
-                Roleid = 2
+                Roleid = 1
 
             };
 
