@@ -15,6 +15,7 @@ import  { FrendSuggestionsService } from './service/frend-suggestions.service';
     ],
 })
 export class IndexComponent implements OnInit {
+
     store: any;
     revenueChart: any;
     salesByCategory: any;
@@ -69,6 +70,14 @@ export class IndexComponent implements OnInit {
         );
     }
     
+    ReqeustForFollow(id: any) {
+        this.FollowRequestSErvice.RequestForFollow(id).subscribe(
+            (respounse)=>{
+                console.log("the respounse" , respounse)
+            }
+        )
+        console.log("the follow id " , id)
+    }
     
 
     async initStore() {
