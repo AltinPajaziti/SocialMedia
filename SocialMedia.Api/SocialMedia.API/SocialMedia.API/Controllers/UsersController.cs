@@ -6,7 +6,6 @@ using SocialMedia.data.Repositories.Interfaces;
 
 namespace SocialMedia.API.Controllers
 {
-    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase

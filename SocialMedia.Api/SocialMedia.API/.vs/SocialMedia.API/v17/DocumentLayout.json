@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|c:\\users\\lenovo\\desktop\\socualmedia\\socialmedia\\socialmedia.api\\socialmedia.api\\socialmedia.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|solutionrelative:socialmedia.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{394BAE2E-0AD6-49CD-B42E-CB6EA0076391}|SocialMedia.data\\SocialMedia.data.csproj|c:\\users\\lenovo\\desktop\\socualmedia\\socialmedia\\socialmedia.api\\socialmedia.api\\socialmedia.data\\repositories\\interfaces\\icomments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{394BAE2E-0AD6-49CD-B42E-CB6EA0076391}|SocialMedia.data\\SocialMedia.data.csproj|solutionrelative:socialmedia.data\\repositories\\interfaces\\icomments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{394BAE2E-0AD6-49CD-B42E-CB6EA0076391}|SocialMedia.data\\SocialMedia.data.csproj|c:\\users\\lenovo\\desktop\\socualmedia\\socialmedia\\socialmedia.api\\socialmedia.api\\socialmedia.data\\repositories\\authenticationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{394BAE2E-0AD6-49CD-B42E-CB6EA0076391}|SocialMedia.data\\SocialMedia.data.csproj|solutionrelative:socialmedia.data\\repositories\\authenticationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|c:\\users\\lenovo\\desktop\\socualmedia\\socialmedia\\socialmedia.api\\socialmedia.api\\socialmedia.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|solutionrelative:socialmedia.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|c:\\users\\lenovo\\desktop\\socualmedia\\socialmedia\\socialmedia.api\\socialmedia.api\\socialmedia.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|solutionrelative:socialmedia.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4173DE9-F713-4922-8816-C6BAA41E6262}|SocialMedia.API\\SocialMedia.API.csproj|c:\\users\\lenovo\\desktop\\socualmedia\\socialmedia\\socialmedia.api\\socialmedia.api\\socialmedia.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -45,7 +49,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,20 +61,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "SocialMedia.API\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "SocialMedia.API\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAjAAAA",
+              "DocumentIndex": 1,
+              "Title": "IComments.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Repositories\\Interfaces\\IComments.cs",
+              "RelativeDocumentMoniker": "SocialMedia.data\\Repositories\\Interfaces\\IComments.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Repositories\\Interfaces\\IComments.cs",
+              "RelativeToolTip": "SocialMedia.data\\Repositories\\Interfaces\\IComments.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T18:29:56.136Z",
+              "WhenOpened": "2025-01-11T18:45:58.92Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "AuthenticationRepo.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Repositories\\AuthenticationRepo.cs",
+              "RelativeDocumentMoniker": "SocialMedia.data\\Repositories\\AuthenticationRepo.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Repositories\\AuthenticationRepo.cs",
+              "RelativeToolTip": "SocialMedia.data\\Repositories\\AuthenticationRepo.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAkwMAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T20:01:27.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "AuthenticationController.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "SocialMedia.API\\Controllers\\AuthenticationController.cs",
@@ -78,12 +94,48 @@
               "RelativeToolTip": "SocialMedia.API\\Controllers\\AuthenticationController.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAASwC0AAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T20:10:58.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-07T20:10:58.49Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\appsettings.json",
+              "RelativeDocumentMoniker": "SocialMedia.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\appsettings.json",
+              "RelativeToolTip": "SocialMedia.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-06T20:09:42.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "SocialMedia.API\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\UsersController.cs*",
+              "RelativeToolTip": "SocialMedia.API\\Controllers\\UsersController.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T18:29:56.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Program.cs",
+              "RelativeDocumentMoniker": "SocialMedia.API\\Program.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Program.cs",
+              "RelativeToolTip": "SocialMedia.API\\Program.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAowFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T20:19:07.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "FollowRequestsController.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\FollowRequestsController.cs",
               "RelativeDocumentMoniker": "SocialMedia.API\\Controllers\\FollowRequestsController.cs",
@@ -96,32 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Program.cs",
-              "RelativeDocumentMoniker": "SocialMedia.API\\Program.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Program.cs",
-              "RelativeToolTip": "SocialMedia.API\\Program.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAowFEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T20:19:07.913Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\appsettings.json",
-              "RelativeDocumentMoniker": "SocialMedia.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\appsettings.json",
-              "RelativeToolTip": "SocialMedia.API\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-06T20:09:42.839Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PC\\AppData\\Local\\SourceServer\\27aac1e54bbe986e333ebc823707f77ef5efdaf8c4b0b7b5b07662cd235f6867\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\PC\\AppData\\Local\\SourceServer\\27aac1e54bbe986e333ebc823707f77ef5efdaf8c4b0b7b5b07662cd235f6867\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Program.cs",
@@ -133,20 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthenticationRepo.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Repositories\\AuthenticationRepo.cs",
-              "RelativeDocumentMoniker": "SocialMedia.data\\Repositories\\AuthenticationRepo.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Repositories\\AuthenticationRepo.cs",
-              "RelativeToolTip": "SocialMedia.data\\Repositories\\AuthenticationRepo.cs",
-              "ViewState": "AQIAAKUAAAAAAAAAAAASwMAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T20:01:27.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "FollowRequestsRepository.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\Repositories\\FollowRequestsRepository.cs",
               "RelativeDocumentMoniker": "SocialMedia.data\\Repositories\\FollowRequestsRepository.cs",
@@ -158,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "PostsController.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\Controllers\\PostsController.cs",
               "RelativeDocumentMoniker": "SocialMedia.API\\Controllers\\PostsController.cs",

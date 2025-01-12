@@ -61,23 +61,23 @@
 
             <div class="panel h-full">
                 <div class="mb-5 flex items-center">
-                    <h5 class="text-lg font-semibold dark:text-white-light">Follow Requests</h5>
+                    <h5 class="text-lg font-semibold dark:text-white-light">Frend Suggestions</h5>
                 </div>
                 <div class="overflow-hidden">
 
 
-
-                    <div class="flex flex-col items-center p-5 sm:flex-row sm:items-center" *ngFor="let follow of topFollowRequests">
-                        <div class="mb-5 h-20 w-20 overflow-hidden rounded-full">
+                    <div class="flex flex-col items-center p-3 sm:flex-row sm:items-center" *ngFor="let follow of AllFrendSuggestions">
+                        <div class="mb-4 h-16 w-16 overflow-hidden rounded-full">
                             <img src="assets/images/profile-34.jpeg" alt="image" class="h-full w-full object-cover">
                         </div>
-                        <div class="flex-1 text-center sm:text-left sm:pl-5 sm:pr-5">
-                            <h5 class="mb-2 text-[15px] font-semibold text-[#3b3f5c] dark:text-white-light">
-                                {{follow.user.name + ' ' + follow.user.surname}}
+                        <div class="flex-1 text-center sm:text-left sm:pl-3 sm:pr-3">
+                            <h5 class="mb-1 text-[13px] font-semibold text-[#3b3f5c] dark:text-white-light">
+                                {{follow.name + ' ' + follow.surname}}
                             </h5>
                         </div>
-                        <button class="btn btn-primary mt-6 sm:mt-0 sm:ml-5" (click)="Confirm(follow.followRequestId)">Confirm</button>
+                        <button class="btn btn-primary mt-4 sm:mt-0 sm:ml-4 text-xs px-3 py-2" (click)="Confirm(follow.followRequestId)">Confirm</button>
                     </div>
+                    
                     
 
 
@@ -93,6 +93,9 @@
                  
                 </div>
             </div>
+
+
+            
         </div>
 
         <div class="mb-6 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
@@ -208,18 +211,39 @@
             </div>
 
             <div class="panel h-full p-0">
-                <div class="absolute flex w-full items-center justify-between p-5">
-                    <div class="relative">
-                        <div
-                            class="flex h-11 w-11 items-center justify-center rounded-lg bg-success-light text-success dark:bg-success dark:text-success-light"
-                        >
-                            <icon-shopping-cart />
-                        </div>
+                <div class="panel h-full">
+                    <div class="mb-5 flex items-center">
+                        <h5 class="text-lg font-semibold dark:text-white-light">Follow Requests</h5>
                     </div>
-                    <h5 class="text-2xl font-semibold ltr:text-right rtl:text-left dark:text-white-light">
-                        3,192
-                        <span class="block text-sm font-normal">Total Orders</span>
-                    </h5>
+                    <div class="overflow-hidden">
+    
+    
+    
+                        <div class="flex flex-col items-center p-5 sm:flex-row sm:items-center" *ngFor="let follow of topFollowRequests">
+                            <div class="mb-5 h-20 w-20 overflow-hidden rounded-full">
+                                <img src="assets/images/profile-34.jpeg" alt="image" class="h-full w-full object-cover">
+                            </div>
+                            <div class="flex-1 text-center sm:text-left sm:pl-5 sm:pr-5">
+                                <h5 class="mb-2 text-[15px] font-semibold text-[#3b3f5c] dark:text-white-light">
+                                    {{follow.user.name + ' ' + follow.user.surname}}
+                                </h5>
+                            </div>
+                            <button class="btn btn-primary mt-6 sm:mt-0 sm:ml-5" (click)="Confirm(follow.followRequestId)">Confirm</button>
+                        </div>
+                        
+    
+    
+    
+    
+    
+    
+                        
+                        <!-- <div class="collowrequest">
+                           
+                     <button  class="btn btn-primary mt-6">Confirm</button>
+                        </div> -->
+                     
+                    </div>
                 </div>
                 <div class="overflow-hidden">
                     <apx-chart

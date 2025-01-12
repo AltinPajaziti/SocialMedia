@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { animate, style, transition, trigger } from '@angular/animations';
 import { FrendsRequestsService } from './service/frends-requests.service';
+import  { FrendSuggestionsService } from './service/frend-suggestions.service';
 
 @Component({
     moduleId: module.id,
@@ -21,10 +22,11 @@ export class IndexComponent implements OnInit {
     totalOrders: any;
     FollowREquests ! : any[];
     topFollowRequests: any[] = [];
+    AllFrendSuggestions: any[] | undefined = undefined;
 
 
     isLoading = true;
-    constructor(public storeData: Store<any> , private FollowRequestSErvice : FrendsRequestsService) {
+    constructor(public storeData: Store<any> , private FollowRequestSErvice : FrendsRequestsService ,private FrendSuggestions: FrendSuggestionsService) {
         this.initStore();
         this.isLoading = false;
     }
@@ -39,6 +41,8 @@ export class IndexComponent implements OnInit {
                 console.error("Error fetching friend requests:", error);
             }
         );
+
+        this.GetAllFrendSuggestios();
     }
 
     Confirm(followid :any){
@@ -50,6 +54,21 @@ export class IndexComponent implements OnInit {
         )
         console.log("the follow id " , followid)
     }
+
+
+    GetAllFrendSuggestios() {
+        this.FrendSuggestions.GetAllFrendSuggestions().subscribe(
+            (response) => {
+                if (response) {
+                    this.AllFrendSuggestions = response;  // Make sure response is an array if that's expected
+                }
+            },
+            (error) => {
+                console.error('Error fetching friend suggestions:', error);
+            }
+        );
+    }
+    
     
 
     async initStore() {
