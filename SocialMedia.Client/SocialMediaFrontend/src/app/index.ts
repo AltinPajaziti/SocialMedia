@@ -62,6 +62,8 @@ export class IndexComponent implements OnInit {
             (response) => {
                 if (response) {
                     this.AllFrendSuggestions = response;  // Make sure response is an array if that's expected
+
+                    console.log("thease are all of the frend suggestions " , this.AllFrendSuggestions)
                 }
             },
             (error) => {
@@ -71,6 +73,7 @@ export class IndexComponent implements OnInit {
     }
     
     ReqeustForFollow(id: any) {
+        debugger;
         this.FollowRequestSErvice.RequestForFollow(id).subscribe(
             (respounse)=>{
                 console.log("the respounse" , respounse)

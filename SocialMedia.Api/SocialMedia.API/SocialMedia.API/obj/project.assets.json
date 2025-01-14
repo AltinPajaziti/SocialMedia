@@ -5118,19 +5118,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lenovo\\.nuget\\packages\\": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\SocialMedia.API.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\SocialMedia.API.csproj",
       "projectName": "SocialMedia.API",
-      "projectPath": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\SocialMedia.API.csproj",
-      "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\obj\\",
+      "projectPath": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\SocialMedia.API.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5145,11 +5145,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\SocialMedia.data.csproj": {
-              "projectPath": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\SocialMedia.data.csproj"
+            "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\SocialMedia.data.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedia.data\\SocialMedia.data.csproj"
             },
-            "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedoa.core\\SocialMedoa.core.csproj": {
-              "projectPath": "C:\\Users\\lenovo\\Desktop\\socualMedia\\SocialMedia\\SocialMedia.Api\\SocialMedia.API\\SocialMedoa.core\\SocialMedoa.core.csproj"
+            "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedoa.core\\SocialMedoa.core.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\SocialMediaApp\\SocialMedia.Api\\SocialMedia.API\\SocialMedoa.core\\SocialMedoa.core.csproj"
             }
           }
         }
@@ -5219,7 +5219,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -77,6 +77,7 @@ builder.Services.ConfigureRepositoryWrapper();
 builder.Services.AddHttpContextAccessor();
 
 
+
 var app = builder.Build();
 app.UseCors("AllowAll");
 

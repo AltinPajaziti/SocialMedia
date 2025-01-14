@@ -28,11 +28,9 @@ export class FrendsRequestsService {
       return this.http.get<any>(this.api + 'DeclineFollow?Followid=' + followId);
     }
 
-
-    RequestForFollow(followId: number) {
-      return this.http.post<any>(this.api + 'RequestForFollow', { Followid: followId });
-    }
-    
+    RequestForFollow(followId: any) {
+      return this.http.post<any>(this.api + 'RequestForFollow', { Followid: followId },{headers : this.auth.Headers()});
+  }
     
     
 }

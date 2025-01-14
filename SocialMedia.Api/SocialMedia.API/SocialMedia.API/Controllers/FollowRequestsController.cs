@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using SocialMedia.data.DTOs;
 using SocialMedia.data.Repositories.Interfaces;
 using SocialMedia.data.Services;
 using SocialMedia.Data;
@@ -16,14 +18,18 @@ namespace SocialMedia.API.Controllers
         private readonly IRepositoryWrapper _repository;
         private readonly IMySessionService _MySessionService;
         private readonly SocialMediaDbContext _dbContext;
-        
 
+        private readonly IHttpContextAccessor httpContextAccessor;
 
-        public FollowRequestsController(IRepositoryWrapper repository , IMySessionService MySessionService , SocialMediaDbContext dbContext)
+      
+
+        public FollowRequestsController(IRepositoryWrapper repository , IHttpContextAccessor httpContextAccessor , IMySessionService MySessionService , SocialMediaDbContext dbContext)
         {
             _repository = repository;
             _MySessionService = MySessionService;
             _dbContext = dbContext;
+            this.httpContextAccessor = httpContextAccessor;
+
         }
 
         [HttpGet("GetAllFollowRequests")]
@@ -135,14 +141,17 @@ namespace SocialMedia.API.Controllers
 
 
         [HttpPost("RequestForFollow")]
+        [Authorize]
 
 
-        public async Task<IActionResult> RequestForFollow(int Followid)
+        public async Task<IActionResult> RequestForFollow([FromBody] FollowidFto Followid)
         {
 
             try
             {
-                var userid = 2;
+                var userid = _MySessionService.GetUserId();
+
+
 
                 var sender = await _repository.Users.GetAll()
                     .Include(x => x.SentFollowRequests)
@@ -151,7 +160,7 @@ namespace SocialMedia.API.Controllers
                 if (sender == null)
                     return NotFound("Sender not found.");
 
-                var receiver = await _repository.Users.GetAll().FirstOrDefaultAsync(u => u.Id == Followid);
+                var receiver = await _repository.Users.GetAll().FirstOrDefaultAsync(u => u.Id == Followid.Followid);
                 if (receiver == null)
                     return NotFound("Receiver not found.");
 
@@ -174,7 +183,7 @@ namespace SocialMedia.API.Controllers
                 await _repository.FollowRequests.Create(followRequest);
                 await _repository.SaveAsync();
 
-                return Ok("Follow request sent successfully.");
+                return Ok(new { message = "Follow request sent successfully." });
             }
             catch (Exception ex)
             {

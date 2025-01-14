@@ -176,8 +176,8 @@
     "Parameters": [
       {
         "Name": "Followid",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Type": "SocialMedia.data.DTOs.FollowidFto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -297,6 +297,16 @@
     "ContainingType": "SocialMedia.API.Controllers.UsersController",
     "Method": "GetAll",
     "RelativePath": "api/Users/Get-all-users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.UsersController",
+    "Method": "GetAllSuggestions",
+    "RelativePath": "api/Users/GetSugestionFrends",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
