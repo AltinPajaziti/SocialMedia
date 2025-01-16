@@ -68,15 +68,21 @@
 
                     <div class="flex flex-col items-center p-3 sm:flex-row sm:items-center" *ngFor="let follow of AllFrendSuggestions">
                         <div class="mb-4 h-16 w-16 overflow-hidden rounded-full">
-                            <img src="assets/images/profile-34.jpeg" alt="image" class="h-full w-full object-cover">
+                          <img src="assets/images/profile-34.jpeg" alt="image" class="h-full w-full object-cover">
                         </div>
                         <div class="flex-1 text-center sm:text-left sm:pl-3 sm:pr-3">
-                            <h5 class="mb-1 text-[13px] font-semibold text-[#3b3f5c] dark:text-white-light">
-                                {{follow.name + ' ' + follow.surname}}
-                            </h5>
+                          <h5 class="mb-1 text-[13px] font-semibold text-[#3b3f5c] dark:text-white-light">
+                            {{follow.name + ' ' + follow.surname}}
+                          </h5>
                         </div>
-                        <button class="btn btn-primary mt-4 sm:mt-0 sm:ml-4 text-xs px-3 py-2" (click)="ReqeustForFollow(follow.id)">Follow</button>
-                    </div>
+                        <button
+                          class="btn btn-primary mt-4 sm:mt-0 sm:ml-4 text-xs px-3 py-2"
+                          [disabled]="sentRequests.has(follow.id)"
+                          (click)="ReqeustForFollow(follow.id)">
+                          {{ sentRequests.has(follow.id) ? 'Sent' : 'Follow' }}
+                        </button>
+                      </div>
+                      
                     
                     
 

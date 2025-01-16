@@ -168,6 +168,22 @@
   },
   {
     "ContainingType": "SocialMedia.API.Controllers.FollowRequestsController",
+    "Method": "HasSentFollowRequest",
+    "RelativePath": "api/FollowRequests/has-sent/{receiverId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "receiverId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.FollowRequestsController",
     "Method": "RequestForFollow",
     "RelativePath": "api/FollowRequests/RequestForFollow",
     "HttpMethod": "POST",

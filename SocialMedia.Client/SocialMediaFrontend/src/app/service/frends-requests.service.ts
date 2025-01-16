@@ -31,6 +31,11 @@ export class FrendsRequestsService {
     RequestForFollow(followId: any) {
       return this.http.post<any>(this.api + 'RequestForFollow', { Followid: followId },{headers : this.auth.Headers()});
   }
+
+
+  hasSentFollowRequest(receiverId: number): Observable<{ hasSent: boolean }> {
+    return this.http.get<{ hasSent: boolean }>(`${this.api}HasSentFollowRequest/${receiverId}`, { headers: this.auth.Headers() });
+  }
     
     
 }

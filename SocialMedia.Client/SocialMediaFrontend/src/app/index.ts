@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { animate, style, transition, trigger } from '@angular/animations';
 import { FrendsRequestsService } from './service/frends-requests.service';
@@ -14,7 +14,7 @@ import  { FrendSuggestionsService } from './service/frend-suggestions.service';
         ]),
     ],
 })
-export class IndexComponent implements OnInit {
+export class IndexComponent implements OnInit ,AfterViewInit {
 
     store: any;
     revenueChart: any;
@@ -24,6 +24,9 @@ export class IndexComponent implements OnInit {
     FollowREquests ! : any[];
     topFollowRequests: any[] = [];
     AllFrendSuggestions: any[] | undefined = undefined;
+    sentRequests: Set<number> = new Set(); // Tracks sent follow requests
+    following: Set<number> = new Set();   // Tracks already-following users
+    
 
 
     isLoading = true;
@@ -31,21 +34,26 @@ export class IndexComponent implements OnInit {
         this.initStore();
         this.isLoading = false;
     }
+
+    ngAfterViewInit(): void {
+        this.GetAllFrendSuggestios();
+    }
     ngOnInit(): void {
         this.FollowRequestSErvice.getAllFriendRequests().subscribe(
             (response) => {
-                this.FollowREquests = response
-                this.topFollowRequests = response
-                console.log("The response:", response);
+                this.FollowREquests = response;
+                this.topFollowRequests = response;
+    
+                // Populate the following set with user IDs of already-followed users
+                this.following = new Set(response.map((req: any) => req.userId || req.id)); // Ensure correct field
+                console.log('The following users:', Array.from(this.following));
             },
             (error) => {
-                console.error("Error fetching friend requests:", error);
+                console.error('Error fetching friend requests:', error);
             }
         );
-
-        this.GetAllFrendSuggestios();
     }
-
+    
     Confirm(followid :any){
         this.FollowRequestSErvice.AcceptFollow(followid).subscribe(
             (respounse)=>{
@@ -72,15 +80,29 @@ export class IndexComponent implements OnInit {
         );
     }
     
-    ReqeustForFollow(id: any) {
-        debugger;
+    ReqeustForFollow(id: number): void {
+        if (this.sentRequests.has(id)) {
+            console.log('Follow request already sent to this user:', id);
+            return;
+        }
+    
+        if (this.following.has(id)) {
+            console.log('Already following this user:', id);
+            return;
+        }
+    
         this.FollowRequestSErvice.RequestForFollow(id).subscribe(
-            (respounse)=>{
-                console.log("the respounse" , respounse)
+            (response) => {
+                console.log('Follow request sent successfully:', response);
+                this.sentRequests.add(id); // Add ID to sentRequests set
+                console.log('Updated sentRequests:', Array.from(this.sentRequests));
+            },
+            (error) => {
+                console.error('Error sending follow request:', error);
             }
-        )
-        console.log("the follow id " , id)
+        );
     }
+    
     
 
     async initStore() {

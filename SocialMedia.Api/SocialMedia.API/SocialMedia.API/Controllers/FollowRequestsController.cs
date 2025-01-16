@@ -13,6 +13,7 @@ namespace SocialMedia.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class FollowRequestsController : ControllerBase
     {
         private readonly IRepositoryWrapper _repository;
@@ -135,6 +136,23 @@ namespace SocialMedia.API.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+
+        [HttpGet("has-sent/{receiverId}")]
+        public async Task<IActionResult> HasSentFollowRequest(int receiverId)
+        {
+            var senderId = _MySessionService.GetUserId(); 
+            
+
+
+            var hasSent = await _repository.FollowRequests.GetAll()
+                .Where(fr => fr.SenderId == senderId && fr.ReceiverId == receiverId).FirstOrDefaultAsync();
+
+            return Ok(new { hasSent });
+        }
+
+
+
 
 
 
