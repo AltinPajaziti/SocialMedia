@@ -38,13 +38,12 @@ namespace SocialMedia.API.Controllers
             }
         }
 
-
         [HttpGet("GetSugestionFrends")]
         public async Task<IActionResult> GetAllSuggestions()
         {
             try
             {
-                var userLoggedIn = _MySessionService.GetUserId();  // Fix variable name (userlooggedin to userLoggedIn)
+                var userLoggedIn = _MySessionService.GetUserId();  // Get the logged-in user ID
 
                 var allUsers = await _repository.Users.GetAll().ToListAsync();
 
@@ -54,22 +53,28 @@ namespace SocialMedia.API.Controllers
                 }
 
                 Random random = new Random();
+
+                // Fetch all the necessary follow request data outside of LINQ
+                var followRequests = await _repository.FollowRequests.GetAll()
+                    .Where(x => allUsers.Select(u => u.Id).Contains(x.ReceiverId) && x.SenderId == userLoggedIn)
+                    .ToListAsync();
+
+                // Randomize and take top 3 users
                 var randomSuggestions = allUsers
                     .OrderBy(x => random.Next())  // Randomize the order
                     .Take(3)  // Take the first 3 after randomizing
-                    .Select(async u => new {  // Use async here to await FollowRequests asynchronously
+                    .Select(u => new
+                    {
                         Id = u.Id,
                         Name = u.Name,
                         Surname = u.Surname,
                         Email = u.Email,
-                        Followersent =  (await _repository.FollowRequests.GetByCondition(x => x.ReceiverId == u.Id && x.SenderId == userLoggedIn).FirstOrDefaultAsync()) != null // Checks if follow request exists
+                        // Check if a follow request was sent to this user
+                        Followersent = followRequests.Any(fr => fr.ReceiverId == u.Id)
                     })
                     .ToList();
 
-                // Since you're using `async`, you need to await `randomSuggestions` 
-                var results = await Task.WhenAll(randomSuggestions);
-
-                return Ok(results);
+                return Ok(randomSuggestions);
             }
             catch (Exception ex)
             {

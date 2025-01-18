@@ -69,7 +69,6 @@ export class IndexComponent implements OnInit ,AfterViewInit {
         this.FrendSuggestions.GetAllFrendSuggestions().subscribe(
             (response) => {
                 if (response) {
-                    debugger;
                     this.AllFrendSuggestions = response;  // Make sure response is an array if that's expected
 
                     console.log("thease are all of the frend suggestions " , this.AllFrendSuggestions)
