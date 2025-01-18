@@ -11,9 +11,12 @@ namespace SocialMedia.API.Controllers
     public class UsersController : ControllerBase
     {
         private readonly IRepositoryWrapper _repository;
+        private readonly IMySessionService _MySessionService;
 
-        public UsersController(IRepositoryWrapper repository)
+
+        public UsersController(IRepositoryWrapper repository, IMySessionService MySessionService)
         {
+            _MySessionService = MySessionService;
             _repository = repository;
 
         }
@@ -36,12 +39,13 @@ namespace SocialMedia.API.Controllers
         }
 
 
-
         [HttpGet("GetSugestionFrends")]
         public async Task<IActionResult> GetAllSuggestions()
         {
             try
             {
+                var userLoggedIn = _MySessionService.GetUserId();  // Fix variable name (userlooggedin to userLoggedIn)
+
                 var allUsers = await _repository.Users.GetAll().ToListAsync();
 
                 if (allUsers == null || allUsers.Count == 0)
@@ -50,9 +54,22 @@ namespace SocialMedia.API.Controllers
                 }
 
                 Random random = new Random();
-                var randomSuggestions = allUsers.OrderBy(x => random.Next()).Take(3).ToList(); 
+                var randomSuggestions = allUsers
+                    .OrderBy(x => random.Next())  // Randomize the order
+                    .Take(3)  // Take the first 3 after randomizing
+                    .Select(async u => new {  // Use async here to await FollowRequests asynchronously
+                        Id = u.Id,
+                        Name = u.Name,
+                        Surname = u.Surname,
+                        Email = u.Email,
+                        Followersent =  (await _repository.FollowRequests.GetByCondition(x => x.ReceiverId == u.Id && x.SenderId == userLoggedIn).FirstOrDefaultAsync()) != null // Checks if follow request exists
+                    })
+                    .ToList();
 
-                return Ok(randomSuggestions);
+                // Since you're using `async`, you need to await `randomSuggestions` 
+                var results = await Task.WhenAll(randomSuggestions);
+
+                return Ok(results);
             }
             catch (Exception ex)
             {
